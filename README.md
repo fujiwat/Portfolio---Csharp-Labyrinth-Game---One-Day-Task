@@ -3,7 +3,7 @@
 
 ## Task
 There is a Labyrinth's coordinates:
-{X=50,Y=50 },
+```{X=50,Y=50 },
 {X=50, Y=500},
 {X=500, Y=500},
 {X=500, Y=50 },
@@ -18,6 +18,7 @@ There is a Labyrinth's coordinates:
 {X=200, Y=150},
 {X=200, Y=350},
 {X=350, Y=350}
+```
 
 Place the smile on the labyrinth's entrance. There is an hour in the middle of the labyrinth that starts
 after the first key is pressed.
@@ -32,7 +33,8 @@ time results are stored in a TXT file.
 　　It is enough for one day task.  I could complete it with no bugs.  Half day is hard to fix the bug.
   Fixed bug is recognizing to touch the line.  Finally, it is written as following code:
 ```
-             for (int i=0; i< labyPoint.Length-1; i++)
+            this.Refresh();
+            for (int i=0; i< labyPoint.Length-1; i++)
             {
                 int x0 = Math.Min(labyPoint[i].X, labyPoint[i + 1].X);
                 int x1 = Math.Max(labyPoint[i].X, labyPoint[i + 1].X);
@@ -46,4 +48,11 @@ time results are stored in a TXT file.
                 }
             }
 ```
-  
+Chechking wheather enter to the goal area is written as following code:
+```
+            if (PicGoal.Left < PicSmile.Left && PicSmile.Right < PicGoal.Right
+            &&  PicGoal.Top  < PicSmile.Top  && PicSmile.Bottom < PicGoal.Bottom)
+            {
+                goal();
+            }
+```
