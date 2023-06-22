@@ -29,7 +29,7 @@ When the clock stops, an input box will appear in which you can enter your name.
 time results are stored in a TXT file.
 
 
-## Workmanship
+## Self Review for the Results
 It was enough for one day task.  I could complete it with no bugs.  Half day is hard to fix the bug.
 Fixed bug is recognizing to touch the line.  Finally, it is written as following code:
 ```
