@@ -56,3 +56,5 @@ Chechking wheather enter to the goal area is written as following code:
                 goal();
             }
 ```
+
+https://github.com/fujiwat/Portofolio---C-Labyrinth-Game---One-Day-Task/assets/16160120/c18c7b79-2dd2-4145-a2ed-e8538c74d562
